@@ -20,6 +20,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\HospitALL.Repositories\HospitALL.Repositories.csproj" />
+	  <ProjectReference Include="..\HospitALL.Utilities\HospitALL.Utilities.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

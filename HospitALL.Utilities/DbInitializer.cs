@@ -14,19 +14,17 @@ namespace HospitALL.Utilities
     
     public class DbInitializer : IDbInitializer
     {
-        private UserManager<IdentityUser> _userManager;
+		UserManager<ApplicationUser> _userManager;
         private RoleManager<IdentityRole> _roleManager;
         private ApplicationDbContext _DBContext;
 
-        public DbInitializer()
-        {
-            
-        }
 
-        public DbInitializer(UserManager<IdentityUser> userManager, 
-            RoleManager<IdentityRole> roleManager, 
-            ApplicationDbContext dBContext)
-        {
+
+		public DbInitializer(
+	 UserManager<ApplicationUser> userManager,
+	 RoleManager<IdentityRole> roleManager,
+	 ApplicationDbContext dBContext)
+		{
             _userManager = userManager;
             _roleManager = roleManager;
             _DBContext = dBContext;
